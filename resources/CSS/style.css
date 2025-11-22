@@ -873,16 +873,8 @@ button {
   }
 
   /* Language dropdown styling on mobile - same as hamburger menu */
-  .nav-right {
-    position: relative;
-  }
-  
-  .language-dropdown li {
-    padding: 0.5rem 0;
-    text-align: center;
-    position: relative;
-  }
 
+  
   .language-dropdown li {
     padding: 0.5rem 0;
     text-align: center;
