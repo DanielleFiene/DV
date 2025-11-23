@@ -768,10 +768,6 @@ button {
   display: inline-block;
 }
 
-.footer__social a:hover {
-  color: var(--first-color);
-}
-
 /* Override general hover for specific social icons */
 .footer__social a.social-instagram:hover,
 .footer__social a.social-linkedin:hover {
@@ -807,10 +803,6 @@ button {
   padding: 0.3rem;
 }
 
-.social-instagram:hover {
-  background-color: var(--first-color);
-}
-
 /* Option 4: CSS background gradient approach (works even if SVG gradient fails) */
 .social-instagram {
   position: relative;
@@ -838,10 +830,6 @@ button {
   
 }
 
-.social-linkedin:hover {
-  background-color: var(--first-color);
-}
-
 .social-linkedin:hover i {
   color: #0072b1 !important;
 
@@ -862,10 +850,6 @@ button {
   display: inline-block;
   border-radius: 5%;
   padding: 0.3rem;
-}
-
-.social-facebook:hover {
-  background-color: var(--first-color);
 }
 
 .social-facebook:hover i {
