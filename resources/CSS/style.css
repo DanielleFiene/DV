@@ -246,7 +246,7 @@ button {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 0.3rem;
   width: 0;
   height: 2px;
   background-color: var(--first-color);
@@ -315,7 +315,7 @@ button {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -0.2rem;
   width: 0;
   height: 2px;
   background-color: var(--first-color);
@@ -755,12 +755,131 @@ button {
 /* social icons */
 .footer__social a {
   margin-right: 0.75rem;
+  margin-top: 10px;
   font-size: 1.4rem;
   color: var(--first-color-mid);
+  padding: 0;
+  line-height: 1;
+}
+
+.footer__social a i {
+  padding: 0;
+  line-height: 1;
+  display: inline-block;
 }
 
 .footer__social a:hover {
   color: var(--first-color);
+}
+
+/* Override general hover for specific social icons */
+.footer__social a.social-instagram:hover,
+.footer__social a.social-linkedin:hover {
+  color: inherit;
+}
+
+/* Instagram gradient definition */
+#instagram-gradient {
+  stop-color: #f09433;
+}
+
+#instagram-gradient stop:nth-child(2) {
+  stop-color: #e6683c;
+}
+
+#instagram-gradient stop:nth-child(3) {
+  stop-color: #dc2743;
+}
+
+#instagram-gradient stop:nth-child(4) {
+  stop-color: #cc2366;
+}
+
+#instagram-gradient stop:nth-child(5) {
+  stop-color: #bc1888;
+}
+
+/* Socials hover effect */
+.social-instagram {
+  transition: all 0.3s ease;
+  display: inline-block;
+  border-radius: 5%;
+  padding: 0.3rem;
+}
+
+.social-instagram:hover {
+  background-color: var(--first-color);
+}
+
+/* Option 4: CSS background gradient approach (works even if SVG gradient fails) */
+.social-instagram {
+  position: relative;
+}
+
+.social-instagram:hover i {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+/* Also try SVG gradient */
+.social-instagram:hover svg,
+.social-instagram:hover svg path {
+  fill: url(#instagram-gradient) !important;
+}
+
+.social-linkedin {
+  transition: all 0.3s ease;
+  display: inline-block;
+  border-radius: 5%;
+  padding: 0.3rem;
+  
+}
+
+.social-linkedin:hover {
+  background-color: var(--first-color);
+}
+
+.social-linkedin:hover i {
+  color: #0072b1 !important;
+
+}
+
+.social-linkedin:hover svg {
+  fill: #0072b1 !important;
+  color: #0072b1 !important;
+}
+
+.social-linkedin:hover svg path,
+.social-linkedin:hover svg use {
+  fill: #0072b1 !important;
+}
+
+.social-facebook {
+  transition: all 0.3s ease;
+  display: inline-block;
+  border-radius: 5%;
+  padding: 0.3rem;
+}
+
+.social-facebook:hover {
+  background-color: var(--first-color);
+}
+
+.social-facebook:hover i {
+  color: #1877F2 !important;
+}
+
+.social-facebook:hover svg {
+  fill: #1877F2 !important;
+  color: #1877F2 !important;
+}
+
+.social-facebook:hover svg path,
+.social-facebook:hover svg use {
+  fill: #1877F2 !important;
 }
 
 .footer__bottom {
