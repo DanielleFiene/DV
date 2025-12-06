@@ -64,8 +64,8 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background:
-  linear-gradient( rgba(0, 0, 0, 0.4) 100% ),
-   url("/resources/images/backdv.png") center center / cover no-repeat fixed;
+  linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+   url("../images/backdv.png") center center / cover no-repeat fixed;
   background-color: #050304;
   color: var(--text-color);
   width: 100%;
@@ -79,8 +79,9 @@ body {
 @media (max-width: 768px) {
   body {
     background:
-    linear-gradient( rgba(0, 0, 0, 0.4) 100% ),
-     url("/resources/images/backdv.png") center center / cover no-repeat scroll;
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+     url("../images/backdv.png") center center / cover no-repeat scroll;
+    background-color: #050304;
   }
 }
 
