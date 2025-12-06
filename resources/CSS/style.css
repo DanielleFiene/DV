@@ -75,6 +75,15 @@ body {
   animation: fadeIn 0.8s ease-out;
 }
 
+/* Fix background on mobile - remove fixed attachment */
+@media (max-width: 768px) {
+  body {
+    background:
+    linear-gradient( rgba(0, 0, 0, 0.4) 100% ),
+     url("/resources/images/backdv.png") center center / cover no-repeat scroll;
+  }
+}
+
 
 h1,
 h2,
