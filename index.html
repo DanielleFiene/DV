@@ -535,7 +535,7 @@ footer p { font-size:10px; letter-spacing:.22em; text-transform:uppercase; color
 </section>
 
 <footer>
-  <p>© 2024 DV Design · Dromen Vormgeven</p>
+  <p>© <span id="copyright-year"></span> DV Design · Dromen Vormgeven</p>
   <div class="footer-links">
     <a href="#about">Studio</a>
     <a href="#services">Diensten</a>
@@ -547,6 +547,13 @@ footer p { font-size:10px; letter-spacing:.22em; text-transform:uppercase; color
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
+(function () {
+  const start = 2024;
+  const y = new Date().getFullYear();
+  const el = document.getElementById('copyright-year');
+  if (el) el.textContent = y > start ? `${start}–${y}` : String(start);
+})();
+
 window.addEventListener('load', () => {
   setTimeout(() => {
     document.getElementById('preloader').classList.add('done');
