@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script>
+window.__dvRoot = /^\/DV(\/|$)/i.test(location.pathname) ? '/DV/' : '/';
+document.write('<base href="' + window.__dvRoot + '">');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,follow">
+<meta name="author" content="DF Digital">
+<meta name="copyright" content="DV Design, Danique Vos">
+<meta name="theme-color" content="#1a1410">
+<meta name="description" content="This page does not exist. Return to DV Design Studio.">
+<title>Page not found — DV Design Studio</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
+<style>html,body{background:#1a1410;color:#f5efe8}</style>
+<script>
+(function (r) {
+  ['base.css', 'errors.css', 'responsive.css'].forEach(function (f) {
+    document.write('<link rel="stylesheet" href="' + r + 'assets/css/' + f + '">');
+  });
+})(window.__dvRoot);
+</script>
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="page-error">
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="cursor" id="cursor" aria-hidden="true"></div>
+<div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
+<div class="noise" aria-hidden="true"></div>
+<canvas id="bg-canvas" aria-hidden="true"></canvas>
+<header id="header">
+  <a href="en/" class="logo-wrap" aria-label="DV Design Studio — back to the top">
+    <span class="logo-main">DV Design Studio</span>
+    <span class="logo-sub">Dromen Vormgeven</span>
+  </a>
+  <nav class="primary-nav" aria-label="Primary">
+    <a href="en/#about">Studio</a>
+    <a href="en/#services">Services</a>
+    <a href="en/#contact" class="nav-cta">Contact</a>
+    <a href="404.html" lang="nl" hreflang="nl" aria-label="Nederlandse versie">Nederlands</a>
+  </nav>
+  <button class="hamburger" id="hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+    <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+  </button>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile" aria-hidden="true">
+    <a href="en/#about" class="mobile-link">Studio</a>
+    <a href="en/#services" class="mobile-link">Services</a>
+    <a href="en/#contact" class="mobile-link">Contact</a>
+    <a href="404.html" class="mobile-link" lang="nl" hreflang="nl" aria-label="Nederlandse versie">Nederlands</a>
+  </nav>
+</header>
+<main id="main" class="page-status" tabindex="-1" aria-labelledby="status-title">
+  <div class="hero-inner">
+    <p class="code" aria-hidden="true">404</p>
+    <p class="hero-eyebrow">Page not found</p>
+    <h1 class="hero-title" id="status-title">This dream<br><em>does not live here</em></h1>
+    <p class="hero-desc">The page you are looking for was moved, renamed, or never arrived. The studio is still open.</p>
+    <div class="hero-actions">
+      <a href="en/" class="btn-primary">Back to the studio</a>
+      <a href="en/#contact" class="btn-ghost">Contact</a>
+    </div>
+  </div>
+</main>
+<footer aria-label="Colophon">
+  <p>© 2026 DV Design Studio · Dromen Vormgeven</p>
+  <nav class="footer-links" aria-label="Footer">
+    <a href="en/#about">Studio</a>
+    <a href="en/#services">Services</a>
+    <a href="mailto:dvdesignstudio.eu@gmail.com" aria-label="Email contact">Contact</a>
+  </nav>
+  <p>Handmade with love &amp; ambition</p>
+</footer>
+<script>
+(function (r) {
+  ['vendor/three.min.js', 'site.js', 'visuals.js'].forEach(function (f) {
+    document.write('<script src="' + r + 'assets/js/' + f + '" defer><\/script>');
+  });
+})(window.__dvRoot);
+</script>
+</body>
+</html>

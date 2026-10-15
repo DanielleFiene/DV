@@ -1,3 +1,5 @@
+const isEn = document.documentElement.lang === 'en';
+
 // ═══════════════════════════════════════════════════════════
 // PRELOADER
 // ═══════════════════════════════════════════════════════════
@@ -51,7 +53,9 @@ function setMobileNavOpen(open) {
   if (!hamburger || !mobileNav) return;
   hamburger.classList.toggle('open', open);
   hamburger.setAttribute('aria-expanded', String(open));
-  hamburger.setAttribute('aria-label', open ? 'Sluit navigatiemenu' : 'Open navigatiemenu');
+  hamburger.setAttribute('aria-label', open
+    ? (isEn ? 'Close menu' : 'Sluit navigatiemenu')
+    : (isEn ? 'Open menu' : 'Open navigatiemenu'));
   mobileNav.classList.toggle('open', open);
   mobileNav.setAttribute('aria-hidden', String(!open));
   mobileNav.toggleAttribute('inert', !open);
@@ -109,18 +113,29 @@ document.querySelectorAll('[data-service]').forEach(a=>{
   const form=document.getElementById('contactForm'),res=document.getElementById('formResult'),draft=document.getElementById('draft'),note=document.getElementById('copyNote');
   if (!form || !res || !draft) return;
   const MAIL='dvdesignstudio.eu@gmail.com';
+  const t=isEn?{
+    fallback:'Select the text and copy with Ctrl+C or Cmd+C.',
+    draft:'Name: ','email':'Email: ','service':'Service: ','budget':'Budget: ',
+    copied:'Message copied. Paste it into an email.',
+    mailCopied:'Email address copied.'
+  }:{
+    fallback:'Selecteer en kopieer met Ctrl+C of Cmd+C.',
+    draft:'Naam: ','email':'E-mail: ','service':'Dienst: ','budget':'Budget: ',
+    copied:'Bericht gekopieerd. Plak het in een e-mail.',
+    mailCopied:'E-mailadres gekopieerd.'
+  };
   function copy(text,ok){
-    const fb=()=>{draft.focus();draft.select();note.textContent='Selecteer en kopieer met Ctrl+C of Cmd+C.'};
+    const fb=()=>{draft.focus();draft.select();note.textContent=t.fallback};
     try{navigator.clipboard.writeText(text).then(()=>{note.textContent=ok},fb)}catch(e){fb()}
   }
   form.addEventListener('submit',function(e){
     e.preventDefault();
     const v=id=>document.getElementById(id).value||'-';
-    draft.value='Naam: '+v('fName')+'\nE-mail: '+v('fMail')+'\nDienst: '+v('fService')+'\nBudget: '+v('fBudget')+'\n\n'+v('fMsg');
+    draft.value=t.draft+v('fName')+'\n'+t.email+v('fMail')+'\n'+t.service+v('fService')+'\n'+t.budget+v('fBudget')+'\n\n'+v('fMsg');
     form.style.display='none';res.classList.add('show');
   });
-  document.getElementById('copyDraft').addEventListener('click',()=>copy(draft.value,'Bericht gekopieerd. Plak het in een e-mail.'));
-  document.getElementById('copyMail').addEventListener('click',()=>copy(MAIL,'E-mailadres gekopieerd.'));
+  document.getElementById('copyDraft').addEventListener('click',()=>copy(draft.value,t.copied));
+  document.getElementById('copyMail').addEventListener('click',()=>copy(MAIL,t.mailCopied));
 })();
 
 // ═══════════════════════════════════════════════════════════

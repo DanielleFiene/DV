@@ -7,6 +7,6 @@ Developer: DF Digital
 Role: website, frontend, SEO and structure
 
 /* SITE */
-Language: nl-NL
+Language: nl-NL, en
 Standards: HTML5, CSS3, JavaScript
 Fonts: Cormorant Garamond, Jost

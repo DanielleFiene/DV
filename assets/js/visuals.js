@@ -96,7 +96,20 @@
 // ═══════════════════════════════════════════════════════════
 // INSTAGRAM FEED (generatieve kunst per post)
 // ═══════════════════════════════════════════════════════════
-const instaData=[
+const instaData=document.documentElement.lang==='en'?[
+  {likes:'0',caption:'Shaping dreams, every single day'},
+  {likes:'0',caption:'Every brand has a story. What is yours?'},
+  {likes:'0',caption:'Branding that stays with you'},
+  {likes:'0',caption:'Colour is a feeling, not a choice'},
+  {likes:'0',caption:'Light, atmosphere, and a good story'},
+  {likes:'0',caption:'Dreams are where everything starts'},
+  {likes:'0',caption:'AI that saves time, in your style'},
+  {likes:'0',caption:'Imagery that stays with you'},
+  {likes:'0',caption:'Less fuss, more dream'},
+  {likes:'0',caption:'Behind the scenes of a shoot'},
+  {likes:'0',caption:'A brand starts with a feeling'},
+  {likes:'0',caption:'Your dream, beautifully shaped'}
+]:[
   {likes:'0',caption:'Dromen vormgeven, elke dag opnieuw'},
   {likes:'0',caption:'Elk merk heeft een verhaal. Wat is het jouwe?'},
   {likes:'0',caption:'Branding die blijft hangen'},

@@ -1,18 +1,19 @@
 # DV Design Studio
 
-> Creatief bureau (Dromen Vormgeven) van Danique Vos, voor branding, webdesign, content, fotografie, video en AI-automatisering. Gevestigd in Nederland. Website gebouwd door DF Digital.
+> Creative studio (Dromen Vormgeven) of Danique Vos, for branding, web design, content, photography, video and AI automation. Based in the Netherlands. Website built by DF Digital.
 
-The live site is a single Dutch homepage with in-page sections. There is no published English translation yet.
+The live site has a Dutch homepage and a full English homepage. Both use in-page sections.
 
 ## Site
-- Home: https://www.dvdesign.studio/
-- Studio: https://www.dvdesign.studio/#about
-- Diensten: https://www.dvdesign.studio/#services
-- Foto & video: https://www.dvdesign.studio/#fotovideo
-- AI: https://www.dvdesign.studio/#ai
-- Belofte: https://www.dvdesign.studio/#belofte
-- Dienstenboekje: https://www.dvdesign.studio/#boekje
-- Contact: https://www.dvdesign.studio/#contact
+- Home (NL): https://www.dvdesign.studio/
+- Home (EN): https://www.dvdesign.studio/en/
+- Studio: https://www.dvdesign.studio/#about · https://www.dvdesign.studio/en/#about
+- Services: https://www.dvdesign.studio/#services · https://www.dvdesign.studio/en/#services
+- Photo & video: https://www.dvdesign.studio/#fotovideo · https://www.dvdesign.studio/en/#fotovideo
+- AI: https://www.dvdesign.studio/#ai · https://www.dvdesign.studio/en/#ai
+- Promise: https://www.dvdesign.studio/#belofte · https://www.dvdesign.studio/en/#belofte
+- Services booklet: https://www.dvdesign.studio/#boekje · https://www.dvdesign.studio/en/#boekje
+- Contact: https://www.dvdesign.studio/#contact · https://www.dvdesign.studio/en/#contact
 
 ## Credits
 - Owner: Danique Vos, DV Design
@@ -24,6 +25,6 @@ The live site is a single Dutch homepage with in-page sections. There is no publ
 - Instagram: https://instagram.com/dvdesign.studio_eu
 
 ## Notes for crawlers
-- Index the Dutch homepage. Alias HTML files (over.html, diensten.html, contact.html, portfolio.html) only redirect to homepage sections.
-- Do not invent prices. Tariffs are shared via the dienstenboekje on request.
-- A kennismakingsgesprek and the Dromen-scan are free.
+- Index the Dutch and English homepages. Alias HTML files only redirect to homepage sections.
+- Do not invent prices. Rates are shared via the services booklet on request.
+- An introduction and the Dream Scan (Dromen-scan) are free.

@@ -3,60 +3,390 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="robots" content="noindex,follow">
+<meta name="description" content="DV Design — Danique Vos. A creative studio for branding, web design, content, photography and AI automation.">
 <meta name="author" content="DF Digital">
+<meta name="creator" content="DF Digital">
 <meta name="copyright" content="DV Design, Danique Vos">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
 <meta name="theme-color" content="#1a1410">
-<meta name="description" content="The English version of DV Design Studio is on the way. Visit the Dutch studio in the meantime.">
-<link rel="canonical" href="https://www.dvdesign.studio/">
-<title>English coming soon — DV Design Studio</title>
+<meta name="format-detection" content="telephone=yes">
+<meta property="og:site_name" content="DV Design Studio">
+<meta property="og:title" content="DV Design – Shaping Dreams">
+<meta property="og:description" content="A creative studio for branding, web design, content, photography and AI automation.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.dvdesign.studio/en/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="DV Design – Shaping Dreams">
+<meta name="twitter:description" content="A creative studio for branding, web design, content, photography and AI automation.">
+<link rel="canonical" href="https://www.dvdesign.studio/en/">
+<link rel="author" href="../humans.txt">
+<link rel="alternate" hreflang="en" href="https://www.dvdesign.studio/en/">
+<link rel="alternate" hreflang="nl" href="https://www.dvdesign.studio/">
+<link rel="alternate" hreflang="x-default" href="https://www.dvdesign.studio/">
+<title>DV Design Studio | Branding, web design &amp; content</title>
 <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="../assets/css/base.css" as="style">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
 <style>html,body{background:#1a1410;color:#f5efe8}</style>
 <link rel="stylesheet" href="../assets/css/base.css">
-<link rel="stylesheet" href="../assets/css/errors.css">
+<link rel="stylesheet" href="../assets/css/sections.css">
 <link rel="stylesheet" href="../assets/css/responsive.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"ProfessionalService","name":"DV Design Studio","alternateName":"Dromen Vormgeven","url":"https://www.dvdesign.studio/en/","email":"dvdesignstudio.eu@gmail.com","telephone":"+31610462856","address":{"@type":"PostalAddress","addressCountry":"NL"},"areaServed":"NL","sameAs":["https://instagram.com/dvdesign.studio_eu"],"description":"A creative studio for branding, web design, content, photography and AI automation.","founder":{"@type":"Person","name":"Danique Vos"},"copyrightHolder":{"@type":"Person","name":"Danique Vos"},"creator":{"@type":"Organization","name":"DF Digital"}},
+{"@type":"WebSite","name":"DV Design Studio","url":"https://www.dvdesign.studio/en/","inLanguage":"en","publisher":{"@type":"Organization","name":"DV Design Studio"},"author":{"@type":"Organization","name":"DF Digital"},"copyrightHolder":{"@type":"Person","name":"Danique Vos"}}
+]}
+</script>
 <script>document.documentElement.classList.add('js');</script>
 </head>
-<body class="page-error">
+<body>
 <a class="skip-link" href="#main">Skip to content</a>
+<div id="preloader" role="status" aria-live="polite" aria-label="Page is loading">
+  <div class="preloader-logo">DV Design Studio</div>
+  <div class="preloader-bar-wrap"><div class="preloader-bar"></div></div>
+</div>
+
 <div class="cursor" id="cursor" aria-hidden="true"></div>
 <div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
 <div class="noise" aria-hidden="true"></div>
 <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
 <header id="header">
-  <a href="../index.html" class="logo-wrap" aria-label="DV Design Studio — home">
+  <a href="#main" class="logo-wrap" aria-label="DV Design Studio — back to the top">
     <span class="logo-main">DV Design Studio</span>
     <span class="logo-sub">Dromen Vormgeven</span>
   </a>
   <nav class="primary-nav" aria-label="Primary">
-    <a href="../index.html">Nederlands</a>
-    <a href="../index.html#contact" class="nav-cta">Contact</a>
+    <a href="#about">Studio</a>
+    <a href="#services">Services</a>
+    <a href="#fotovideo">Photo &amp; Video</a>
+    <a href="#ai">AI</a>
+    <a href="#belofte">Promise</a>
+    <a href="#boekje">Booklet</a>
+    <a href="#contact" class="nav-cta">Contact</a>
+    <a href="../index.html" lang="nl" hreflang="nl" aria-label="Nederlandse versie">Nederlands</a>
+  </nav>
+  <button class="hamburger" id="hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+    <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+  </button>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile" aria-hidden="true">
+    <a href="#about" class="mobile-link">Studio</a>
+    <a href="#services" class="mobile-link">Services</a>
+    <a href="#fotovideo" class="mobile-link">Photo &amp; Video</a>
+    <a href="#ai" class="mobile-link">AI</a>
+    <a href="#belofte" class="mobile-link">Promise</a>
+    <a href="#boekje" class="mobile-link">Booklet</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+    <a href="../index.html" class="mobile-link" lang="nl" hreflang="nl" aria-label="Nederlandse versie">Nederlands</a>
   </nav>
 </header>
-<main id="main" class="page-status" tabindex="-1" aria-labelledby="status-title">
+
+<main id="main" tabindex="-1">
+<section id="hero" aria-labelledby="hero-title">
   <div class="hero-inner">
-    <p class="hero-eyebrow">English</p>
-    <h1 class="hero-title" id="status-title">Coming<br><em>soon</em></h1>
-    <p class="hero-desc">The English version is not published yet. The Dutch studio is live — same work, same people, just in another language for now.</p>
+    <p class="hero-eyebrow">Creative studio · Est. 2024</p>
+    <h1 class="hero-title" id="hero-title">Shaping<br><em>Dreams</em></h1>
+    <p class="hero-desc">We turn visions into brands that feel, move people, and stay with you. From concept to campaign — thought through in full.</p>
     <div class="hero-actions">
-      <a href="../index.html" class="btn-primary" lang="nl">Naar de Nederlandse site</a>
-      <a href="mailto:dvdesignstudio.eu@gmail.com" class="btn-ghost" aria-label="Email DV Design">Email us</a>
+      <a href="#contact" class="btn-primary" data-service="Free introduction">Book a free introduction</a>
+      <a href="#boekje" class="btn-ghost">Request the services booklet</a>
     </div>
   </div>
+  <div class="scroll-hint" aria-hidden="true">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<section id="about" aria-labelledby="about-title">
+  <div class="about-visual reveal" aria-hidden="true">
+    <div class="about-frame"></div>
+    <div class="about-inner-frame"></div>
+    <canvas id="shape-canvas"></canvas>
+  </div>
+  <div class="about-content">
+    <div class="section-label reveal">About DV Design</div>
+    <h2 class="about-title reveal" id="about-title">Ideas that<br><em>stay with you</em></h2>
+    <p class="about-text reveal">DV Design is more than a design studio. We think in experience, emotion, and brand stories. Every project starts at the heart of a dream and grows into something tangible, distinctive, and memorable.</p>
+    <p class="about-text reveal">We work with founders who will not settle for ordinary. With brands that want to stand out, move people, and inspire. With dreams that deserve to become real.</p>
+    <div class="about-stat-row reveal">
+      <div class="stat"><div class="stat-num">45</div><div class="stat-label">Min. free scan</div></div>
+      <div class="stat"><div class="stat-num">100%</div><div class="stat-label">Tailored</div></div>
+      <div class="stat"><div class="stat-num">∞</div><div class="stat-label">Ambition</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="services" aria-labelledby="services-title">
+  <div class="section-header">
+    <div class="section-label reveal" style="justify-content:center;">What we do</div>
+    <h2 class="section-title reveal" id="services-title">Services that<br><em>make the difference</em></h2>
+    <p class="ai-intro reveal">Every package and rate is in our services booklet. Request it free of charge, or book an introduction straight away.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card reveal"><div class="service-num">01</div><svg class="service-icon" aria-hidden="true" focusable="false" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1"><path d="M10 34 L10 20 L22 10 L34 20 L34 34" stroke-opacity=".4"/><rect x="17" y="26" width="10" height="8"/><path d="M6 22 L22 6 L38 22" stroke-opacity=".6"/></svg><h3 class="service-title">Social media management</h3><p class="service-desc">You choose how many posts a week suit you: one, two, or three. We take care of the posts, captions, stories, and planning.</p><div class="service-tags"><span class="tag">Instagram</span><span class="tag">Planning</span><span class="tag">Stories</span></div></div>
+    <div class="service-card reveal"><div class="service-num">02</div><svg class="service-icon" aria-hidden="true" focusable="false" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1"><circle cx="22" cy="18" r="8" stroke-opacity=".4"/><path d="M10 36 C10 28 34 28 34 36" stroke-opacity=".6"/><path d="M28 14 L36 10" stroke-opacity=".3"/><circle cx="37" cy="9" r="3" stroke-opacity=".4"/></svg><h3 class="service-title">Content creation</h3><p class="service-desc">Reels with animated type, carousels in your visual identity, and photo editing. Standalone or as a campaign.</p><div class="service-tags"><span class="tag">Reels</span><span class="tag">Carousels</span><span class="tag">Campaigns</span></div></div>
+    <div class="service-card reveal"><div class="service-num">03</div><svg class="service-icon" aria-hidden="true" focusable="false" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1"><path d="M22 8 L36 16 L36 28 L22 36 L8 28 L8 16 Z" stroke-opacity=".4"/><path d="M22 14 L30 19 L30 25 L22 30 L14 25 L14 19 Z" stroke-opacity=".6"/><circle cx="22" cy="22" r="3"/></svg><h3 class="service-title">Photography &amp; video</h3><p class="service-desc">Atmospheric shoots of your space, product, team, or event. Selection and retouching included.</p><div class="service-tags"><span class="tag">Photography</span><span class="tag">Video</span><span class="tag">Events</span></div></div>
+    <div class="service-card reveal"><div class="service-num">04</div><svg class="service-icon" aria-hidden="true" focusable="false" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1"><rect x="8" y="12" width="28" height="20" rx="2" stroke-opacity=".4"/><path d="M8 18 L36 18" stroke-opacity=".6"/><circle cx="12" cy="15" r="1.5" fill="currentColor" opacity=".4"/><circle cx="17" cy="15" r="1.5" fill="currentColor" opacity=".4"/></svg><h3 class="service-title">Website</h3><p class="service-desc">From a single page to a full business site. Beautiful, fast, easy to read on any phone, and findable in Google.</p><div class="service-tags"><span class="tag">One-pager</span><span class="tag">Business site</span><span class="tag">Maintenance</span></div></div>
+    <div class="service-card reveal"><div class="service-num">05</div><svg class="service-icon" aria-hidden="true" focusable="false" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1"><circle cx="22" cy="22" r="18" stroke-opacity=".4"/><path d="M14 22 C14 16 30 16 30 22 C30 28 14 28 14 22Z" stroke-opacity=".8"/><circle cx="22" cy="22" r="3"/></svg><h3 class="service-title">Branding &amp; identity</h3><p class="service-desc">Logo, colour palette, typography, and a brand story that lands. A complete world around your idea.</p><div class="service-tags"><span class="tag">Logo</span><span class="tag">Identity</span><span class="tag">Story</span></div></div>
+    <div class="service-card reveal"><div class="service-num">06</div><svg class="service-icon" aria-hidden="true" focusable="false" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1"><rect x="10" y="10" width="10" height="14" rx="1" stroke-opacity=".4"/><rect x="24" y="10" width="10" height="8" rx="1" stroke-opacity=".6"/><rect x="24" y="22" width="10" height="12" rx="1" stroke-opacity=".4"/><rect x="10" y="28" width="10" height="6" rx="1" stroke-opacity=".6"/></svg><h3 class="service-title">AI automation</h3><p class="service-desc">Chatbots, automatic replies to messages, and smart workflows. Made for small businesses and charities.</p><div class="service-tags"><span class="tag">Free scan</span><span class="tag">Chatbot</span><span class="tag">Workflows</span></div></div>
+  </div>
+
+  <div class="allin reveal">
+    <div>
+      <div class="ai-step">All-in</div>
+      <h3 class="allin-title">The <em>Dream Package</em></h3>
+      <p class="allin-text">Everything in one pair of hands: visual identity, website, social media, and maintenance, with priority on changes. Prefer your own mix? We put that together with you.</p>
+    </div>
+    <div class="allin-actions">
+      <a href="#contact" class="btn-primary" data-service="Dream Package or custom mix">Ask about the options</a>
+      <a href="#boekje" class="btn-ghost">See the services booklet</a>
+    </div>
+  </div>
+</section>
+
+<section id="fotovideo" aria-labelledby="fotovideo-title">
+  <div class="fv-frame reveal" aria-hidden="true">
+    <span class="fv-corner tl"></span><span class="fv-corner tr"></span><span class="fv-corner bl"></span><span class="fv-corner br"></span>
+    <span class="fv-rec"><i></i>Rec</span>
+    <div class="fv-meta">Imagery with feeling<small>Photo · Video · Reels</small></div>
+  </div>
+  <div>
+    <div class="section-label reveal">Photo &amp; videography</div>
+    <h2 class="about-title reveal" id="fotovideo-title">Imagery that<br><em>makes you feel</em></h2>
+    <p class="about-text reveal">Alongside design and AI, we also make photos and video. Imagery that fits your brand, your atmosphere, and your story, so your content looks like one world every time.</p>
+    <ul class="fv-list reveal">
+      <li><b>Brand and product photography</b><span>Atmospheric photos for your website, shop, and social media.</span></li>
+      <li><b>Reels and video</b><span>Short videos that stand out on Instagram and TikTok, from idea to edit.</span></li>
+      <li><b>Events and behind the scenes</b><span>The energy of your team and your day, caught as it really is.</span></li>
+      <li><b>Portraits and team photos</b><span>Personal images that build trust.</span></li>
+    </ul>
+    <p class="about-text reveal" style="margin-top:28px">Together with your AI offer: we also write the copy, plan the work, and edit, so your content finds a steady rhythm.</p>
+  </div>
+</section>
+
+<section id="ai" aria-labelledby="ai-title">
+  <div class="ai-inner">
+    <div class="section-header" style="margin-bottom:0">
+      <div class="section-label reveal" style="justify-content:center;">New · AI for charities and small businesses</div>
+      <h2 class="section-title reveal" id="ai-title">Less fuss,<br><em>more dream</em></h2>
+      <p class="ai-intro reveal">We help charities and small businesses with AI: less admin, more time for what matters. Affordable, personal, and free of jargon. Start with a free scan.</p>
+    </div>
+    <div class="ai-grid">
+      <div class="ai-card reveal">
+        <span class="ai-step">Step 1</span>
+        <h3>Dream Scan</h3>
+        <ul><li>A 45-minute conversation</li><li>Where can AI save time or bring in revenue?</li><li>You receive a short action list</li></ul>
+        <div class="ai-price"><span><b>Free</b></span></div>
+      </div>
+      <div class="ai-card feat reveal">
+        <span class="ai-step">Step 2</span>
+        <h3>Dream Start</h3>
+        <ul><li>One concrete solution</li><li>For example a chatbot, content planning, or quote workflow</li><li>In your organisation’s visual identity</li></ul>
+        <div class="ai-price"><span><b>A tailored price</b>After the free scan. Always affordable for smaller budgets.</span></div>
+      </div>
+      <div class="ai-card reveal">
+        <span class="ai-step">Step 3</span>
+        <h3>Dream Growth</h3>
+        <ul><li>New content and automations each month</li><li>Changes and support</li><li>A review call every month</li></ul>
+        <div class="ai-price"><span><b>A tailored price</b>After the free scan. Always affordable for smaller budgets.</span></div>
+      </div>
+    </div>
+    <div class="ai-cta reveal"><a href="#contact" class="btn-primary">Book your free scan</a></div>
+  </div>
+</section>
+
+<section id="voorbeelden" aria-labelledby="voorbeelden-title">
+  <div class="section-header">
+    <div class="section-label reveal" style="justify-content:center;">Examples</div>
+    <h2 class="section-title reveal" id="voorbeelden-title">What AI can<br><em>do for you</em></h2>
+  </div>
+  <div class="services-grid">
+<div class="service-card reveal"><div class="service-num">01</div><h3 class="service-title">A chatbot for questions</h3><p class="service-desc">Questions about opening hours, bookings, or donations get an answer straight away, day and night, in your voice.</p><div class="service-tags"><span class="tag">Chatbot</span></div></div>
+<div class="service-card reveal"><div class="service-num">02</div><h3 class="service-title">Social media on a rhythm</h3><p class="service-desc">A fixed monthly plan with copy, carousels, and reels, so you do not have to invent a post every day.</p><div class="service-tags"><span class="tag">Content</span></div></div>
+<div class="service-card reveal"><div class="service-num">03</div><h3 class="service-title">Quotes and follow-up</h3><p class="service-desc">A request comes in, and the quote, confirmation, and reminder go out on their own.</p><div class="service-tags"><span class="tag">Workflow</span></div></div>
+<div class="service-card reveal"><div class="service-num">04</div><h3 class="service-title">Newsletters and copy</h3><p class="service-desc">Faster writing for donors, clients, and volunteers, in your voice and your story.</p><div class="service-tags"><span class="tag">Copy</span></div></div>
+<div class="service-card reveal"><div class="service-num">05</div><h3 class="service-title">Appointments and bookings</h3><p class="service-desc">Less email back and forth. Requests are gathered, checked, and scheduled neatly.</p><div class="service-tags"><span class="tag">Planning</span></div></div>
+<div class="service-card reveal"><div class="service-num">06</div><h3 class="service-title">Applications and reports</h3><p class="service-desc">Help with grant applications, annual reports, and summaries, so you keep time for the real work.</p><div class="service-tags"><span class="tag">Admin</span></div></div>
+  </div>
+</section>
+
+<section id="process" aria-labelledby="process-title">
+  <div class="process-inner">
+    <div class="section-header">
+      <div class="section-label reveal" style="justify-content:center;">How we work</div>
+      <h2 class="section-title reveal" id="process-title">From dream<br><em>to reality</em></h2>
+    </div>
+    <div class="process-steps">
+      <div class="process-step reveal"><div class="step-dot"><span>I</span></div><h3 class="step-title">Discover</h3><p class="step-desc">We go deep into your world, your motives, and your ambition. What do you want to achieve? What makes you unique?</p></div>
+      <div class="process-step reveal"><div class="step-dot"><span>II</span></div><h3 class="step-title">Dream</h3><p class="step-desc">We think big, without a ceiling. Concepts, visual language, names, and stories that fit the core.</p></div>
+      <div class="process-step reveal"><div class="step-dot"><span>III</span></div><h3 class="step-title">Shape</h3><p class="step-desc">The concept becomes real. Logos, campaigns, websites, and every visual expression come to life.</p></div>
+      <div class="process-step reveal"><div class="step-dot"><span>IV</span></div><h3 class="step-title">Launch</h3><p class="step-desc">Together we take the brand into the world. With strategy, timing, and an approach that makes an impact.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="belofte" aria-labelledby="belofte-title">
+  <div class="section-header">
+    <div class="section-label reveal" style="justify-content:center;">Service promise</div>
+    <h2 class="section-title reveal" id="belofte-title">Our promise<br><em>to you</em></h2>
+    <p class="ai-intro reveal">You always know what you get, what it costs, and when it will be ready.</p>
+  </div>
+  <div class="promise-grid">
+    <div class="promise reveal"><div class="promise-num">24h</div><h3>A quick reply</h3><p>A response to your message within 24 hours on working days.</p></div>
+    <div class="promise reveal"><div class="promise-num">48h</div><h3>Quickly online</h3><p>Small website changes go live within 48 hours, once everything has been delivered. With the Dream Package, within 24 hours.</p></div>
+    <div class="promise reveal"><div class="promise-num">€</div><h3>A fixed price up front</h3><p>No surprises afterwards. Extra work only after you agree.</p></div>
+    <div class="promise reveal"><div class="promise-num">2×</div><h3>Feedback rounds</h3><p>Two revision rounds are always included per assignment.</p></div>
+  </div>
+</section>
+
+<section id="boekje" aria-labelledby="boekje-title">
+  <h2 id="boekje-title" class="visually-hidden">Services booklet and introduction</h2>
+  <div class="book-grid">
+    <div class="book-card feat reveal">
+      <div class="ai-step">Services booklet 2026</div>
+      <h3>Every package and rate, in one place</h3>
+      <p>Curious what a collaboration costs? The services booklet sets out exactly what you get per hour, per package, and per service. Request it and we will send it to your inbox within 24 hours on working days.</p>
+      <a href="#contact" class="btn-primary" data-service="Request the services booklet">Request the services booklet</a>
+    </div>
+    <div class="book-card reveal">
+      <div class="ai-step">No strings</div>
+      <h3>A free introduction</h3>
+      <p>Tell us about your idea, brand, or dream. Together we look at what you need and which approach fits. Then you receive a clear proposal with a fixed price.</p>
+      <a href="#contact" class="btn-primary" data-service="Free introduction">Book an introduction</a>
+    </div>
+  </div>
+</section>
+
+<section id="instagram" aria-labelledby="instagram-title">
+  <div class="section-header">
+    <div class="section-label reveal" style="justify-content:center;">Follow us</div>
+    <h2 class="section-title reveal" id="instagram-title">Daily<br><em>inspiration</em></h2>
+  </div>
+  <div class="insta-grid reveal" id="instaGrid" role="list" aria-label="Instagram examples"></div>
+  <noscript>
+  <ul id="instaCaptions">
+    <li>Shaping dreams, every single day</li>
+    <li>Every brand has a story. What is yours?</li>
+    <li>Branding that stays with you</li>
+    <li>Colour is a feeling, not a choice</li>
+    <li>Light, atmosphere, and a good story</li>
+    <li>Dreams are where everything starts</li>
+    <li>AI that saves time, in your style</li>
+    <li>Imagery that stays with you</li>
+    <li>Less fuss, more dream</li>
+    <li>Behind the scenes of a shoot</li>
+    <li>A brand starts with a feeling</li>
+    <li>Your dream, beautifully shaped</li>
+  </ul>
+  </noscript>
+  <a href="https://instagram.com/dvdesign.studio_eu" class="insta-link reveal" rel="noopener noreferrer" aria-label="Follow DV Design on Instagram, @dvdesign.studio_eu">
+    Follow us on Instagram<br>
+    <span class="insta-handle">@dvdesign.studio_eu</span>
+  </a>
+</section>
+
+<section id="contact" aria-labelledby="contact-title">
+  <div class="contact-left">
+    <div class="section-label reveal">Start here</div>
+    <h2 class="contact-title reveal" id="contact-title">Let’s shape<br><em>your dream</em></h2>
+    <p class="contact-text reveal">Book a free introduction or request the services booklet. We would love to hear about your vision, your ambition, and the story behind your idea. We reply within 24 hours on working days.</p>
+    <div class="contact-info reveal">
+      <div class="contact-info-item">
+        <span class="info-label">Email</span>
+        <a href="mailto:dvdesignstudio.eu@gmail.com" class="info-value" aria-label="Email dvdesignstudio.eu@gmail.com">dvdesignstudio.eu@gmail.com</a>
+      </div>
+      <div class="contact-info-item">
+        <span class="info-label">Phone</span>
+        <a href="tel:+31610462856" class="info-value" aria-label="Call +31 6 10462856">+31 6 10462856</a>
+      </div>
+      <div class="contact-info-item">
+        <span class="info-label">Instagram</span>
+        <a href="https://instagram.com/dvdesign.studio_eu" class="info-value" rel="noopener noreferrer" aria-label="Open Instagram @dvdesign.studio_eu">@dvdesign.studio_eu</a>
+      </div>
+      <div class="contact-info-item">
+        <span class="info-label">Based in</span>
+        <span class="info-value">The Netherlands</span>
+      </div>
+    </div>
+  </div>
+  <div class="contact-right reveal">
+    <form class="contact-form" id="contactForm" aria-label="Contact form">
+      <div class="form-row">
+        <div class="field"><label for="fName">Name</label><input id="fName" name="name" type="text" placeholder="Your name" autocomplete="name" required aria-required="true"></div>
+        <div class="field"><label for="fMail">Email</label><input id="fMail" name="email" type="email" placeholder="you@email.com" autocomplete="email" required aria-required="true"></div>
+      </div>
+      <div class="field">
+        <label for="fService">Service</label>
+        <select id="fService" name="service">
+          <option value="" disabled selected>What can we do for you?</option>
+          <option>Free introduction</option>
+          <option>Request the services booklet</option>
+          <option>Social media management</option>
+          <option>Content creation</option>
+          <option>Photography &amp; video</option>
+          <option>Website</option>
+          <option>Branding &amp; identity</option>
+          <option>AI automation (free scan)</option>
+          <option>Dream Package or custom mix</option>
+        </select>
+      </div>
+      <div class="field"><label for="fMsg">Tell us about your dream</label><textarea id="fMsg" name="message" placeholder="Describe your project, idea, or brand..." required aria-required="true"></textarea></div>
+      <div class="field">
+        <label for="fBudget">Budget</label>
+        <select id="fBudget" name="budget">
+          <option value="" disabled selected>Budget range</option>
+          <option>Up to €500</option>
+          <option>€500 – €1,500</option>
+          <option>€1,500 – €3,000</option>
+          <option>€3,000 – €6,000</option>
+          <option>€6,000+</option>
+          <option>Not sure yet</option>
+        </select>
+      </div>
+      <button type="submit" class="form-btn" aria-label="Prepare my message to email">Prepare my message</button>
+      <p class="contact-note" id="contactNote">We prepare your message here. You send it to us yourself by email.</p>
+    </form>
+    <div class="form-result" id="formResult" role="status" aria-live="polite">
+      <div class="rt">Almost there</div>
+      <p>Copy your message and email it to <b>dvdesignstudio.eu@gmail.com</b>. We will get in touch within 24 hours on working days.</p>
+      <textarea id="draft" class="draft" readonly aria-label="Your message"></textarea>
+      <div class="row">
+        <button type="button" class="form-btn" id="copyDraft" aria-label="Copy the message to the clipboard">Copy message</button>
+        <button type="button" class="form-btn" id="copyMail" style="background:transparent;color:var(--gold);border:1px solid rgba(212,180,131,.4)" aria-label="Copy the email address to the clipboard">Copy email address</button>
+      </div>
+      <p id="copyNote" role="status"></p>
+    </div>
+  </div>
+</section>
+
 </main>
-<footer aria-label="Site footer">
+
+<footer aria-label="Colophon">
   <p>© 2026 DV Design Studio · Dromen Vormgeven</p>
   <nav class="footer-links" aria-label="Footer">
-    <a href="../index.html" lang="nl">Nederlands</a>
+    <a href="#about">Studio</a>
+    <a href="#services">Services</a>
+    <a href="#boekje">Booklet</a>
     <a href="mailto:dvdesignstudio.eu@gmail.com" aria-label="Email contact">Contact</a>
   </nav>
   <p>Handmade with love &amp; ambition</p>
 </footer>
+
+<button class="bot-launch" id="botLaunch" type="button" aria-expanded="false" aria-controls="botPanel" aria-hidden="true" aria-label="Open the DV Design assistant">✦ Ask a question</button>
+<div class="bot-panel" id="botPanel" role="dialog" aria-modal="true" aria-labelledby="botTitle" aria-hidden="true">
+  <div class="bot-head"><div><b id="botTitle">DV Design assistant</b><small>AI chatbot · sample</small></div><button class="bot-x" id="botClose" type="button" aria-label="Close the assistant">✕</button></div>
+  <div class="bot-log" id="botLog" aria-live="polite" aria-relevant="additions"></div>
+  <div class="bot-chips" id="botChips" role="group" aria-label="Suggested questions"></div>
+  <form class="bot-form" id="botForm" aria-label="Ask the assistant a question"><input id="botInput" type="text" placeholder="Type your question..." autocomplete="off" aria-label="Your question"><button id="botSend" type="submit" aria-label="Send question">Send</button></form>
+</div>
 <script src="../assets/js/vendor/three.min.js" defer></script>
 <script src="../assets/js/site.js" defer></script>
 <script src="../assets/js/visuals.js" defer></script>
+<script src="../assets/js/chatbot.js" defer></script>
 </body>
 </html>
