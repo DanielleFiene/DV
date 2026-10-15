@@ -1,0 +1,12 @@
+/* TEAM */
+Owner: Danique Vos
+Studio: DV Design
+Site: https://www.dvdesign.studio/
+
+Developer: DF Digital
+Role: website, frontend, SEO and structure
+
+/* SITE */
+Language: nl-NL
+Standards: HTML5, CSS3, JavaScript
+Fonts: Cormorant Garamond, Jost

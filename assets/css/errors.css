@@ -1,0 +1,4 @@
+/* DV Design — 403 / 404 */
+.page-status { min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 140px 40px 80px; position: relative; z-index: 2; }
+.page-status .hero-inner { max-width: 640px; }
+.page-status .code { font-family: 'Cormorant Garamond', serif; font-size: clamp(56px, 22vw, 140px); font-weight: 300; line-height: 1; color: var(--gold); opacity: .9; margin-bottom: 12px; }

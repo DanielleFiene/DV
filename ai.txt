@@ -1,0 +1,6 @@
+# AI crawlers
+See llms.txt for a concise description of DV Design Studio.
+
+Owner: Danique Vos (DV Design)
+Website built by: DF Digital
+Primary URL: https://www.dvdesign.studio/

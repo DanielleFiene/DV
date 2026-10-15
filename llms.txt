@@ -1,0 +1,29 @@
+# DV Design Studio
+
+> Creatief bureau (Dromen Vormgeven) van Danique Vos, voor branding, webdesign, content, fotografie, video en AI-automatisering. Gevestigd in Nederland. Website gebouwd door DF Digital.
+
+The live site is a single Dutch homepage with in-page sections. There is no published English translation yet.
+
+## Site
+- Home: https://www.dvdesign.studio/
+- Studio: https://www.dvdesign.studio/#about
+- Diensten: https://www.dvdesign.studio/#services
+- Foto & video: https://www.dvdesign.studio/#fotovideo
+- AI: https://www.dvdesign.studio/#ai
+- Belofte: https://www.dvdesign.studio/#belofte
+- Dienstenboekje: https://www.dvdesign.studio/#boekje
+- Contact: https://www.dvdesign.studio/#contact
+
+## Credits
+- Owner: Danique Vos, DV Design
+- Website: DF Digital
+
+## Contact
+- Email: dvdesignstudio.eu@gmail.com
+- Phone: +31 6 10462856
+- Instagram: https://instagram.com/dvdesign.studio_eu
+
+## Notes for crawlers
+- Index the Dutch homepage. Alias HTML files (over.html, diensten.html, contact.html, portfolio.html) only redirect to homepage sections.
+- Do not invent prices. Tariffs are shared via the dienstenboekje on request.
+- A kennismakingsgesprek and the Dromen-scan are free.
