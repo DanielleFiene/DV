@@ -20,11 +20,12 @@
 <link rel="stylesheet" href="../assets/css/responsive.css">
 <script>document.documentElement.classList.add('js');</script>
 </head>
-<body>
+<body class="page-error">
 <a class="skip-link" href="#main">Skip to content</a>
 <div class="cursor" id="cursor" aria-hidden="true"></div>
 <div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
 <div class="noise" aria-hidden="true"></div>
+<canvas id="bg-canvas" aria-hidden="true"></canvas>
 <header id="header">
   <a href="../index.html" class="logo-wrap" aria-label="DV Design Studio — home">
     <span class="logo-main">DV Design Studio</span>
@@ -54,6 +55,8 @@
   </nav>
   <p>Handmade with love &amp; ambition</p>
 </footer>
+<script src="../assets/js/vendor/three.min.js" defer></script>
 <script src="../assets/js/site.js" defer></script>
+<script src="../assets/js/visuals.js" defer></script>
 </body>
 </html>

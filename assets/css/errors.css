@@ -1,4 +1,37 @@
 /* DV Design — 403 / 404 */
+.page-error {
+  background: #1a1410;
+}
+.page-error::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-color: #1a1410;
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(212, 180, 131, .12), transparent 55%),
+    radial-gradient(1px 1px at 8% 18%, rgba(212, 180, 131, .75), transparent),
+    radial-gradient(1px 1px at 22% 42%, rgba(201, 169, 142, .55), transparent),
+    radial-gradient(1.5px 1.5px at 36% 12%, rgba(245, 239, 232, .35), transparent),
+    radial-gradient(1px 1px at 48% 68%, rgba(212, 180, 131, .6), transparent),
+    radial-gradient(1px 1px at 61% 28%, rgba(201, 169, 142, .45), transparent),
+    radial-gradient(1.5px 1.5px at 74% 55%, rgba(212, 180, 131, .55), transparent),
+    radial-gradient(1px 1px at 88% 16%, rgba(245, 239, 232, .4), transparent),
+    radial-gradient(1px 1px at 14% 78%, rgba(212, 180, 131, .5), transparent),
+    radial-gradient(1px 1px at 29% 91%, rgba(201, 169, 142, .4), transparent),
+    radial-gradient(1.5px 1.5px at 55% 86%, rgba(212, 180, 131, .45), transparent),
+    radial-gradient(1px 1px at 81% 73%, rgba(245, 239, 232, .3), transparent),
+    radial-gradient(1px 1px at 93% 48%, rgba(212, 180, 131, .5), transparent),
+    radial-gradient(1px 1px at 41% 36%, rgba(201, 169, 142, .35), transparent),
+    radial-gradient(1px 1px at 67% 8%, rgba(212, 180, 131, .4), transparent);
+}
+
 .page-status { min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 140px 40px 80px; position: relative; z-index: 2; }
-.page-status .hero-inner { max-width: 640px; }
+.page-status .hero-inner { max-width: 640px; margin-inline: auto; text-align: center; }
+.page-status .hero-title,
+.page-status .hero-desc,
+.page-status .hero-eyebrow { text-align: center; }
+.page-status .hero-desc { margin-left: auto; margin-right: auto; }
+.page-status .hero-actions { justify-content: center; align-items: center; }
 .page-status .code { font-family: 'Cormorant Garamond', serif; font-size: clamp(56px, 22vw, 140px); font-weight: 300; line-height: 1; color: var(--gold); opacity: .9; margin-bottom: 12px; }
